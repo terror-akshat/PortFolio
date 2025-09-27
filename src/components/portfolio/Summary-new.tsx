@@ -10,8 +10,8 @@ export function Summary() {
 
   const stats = [
     { number: "700+", label: "LeetCode Problems", icon: Brain },
-    { number: "15+", label: "Projects Built", icon: Code2 },
-    { number: "5+", label: "Technologies", icon: Lightbulb },
+    { number: "5+", label: "Projects Built", icon: Code2 },
+    { number: "15+", label: "Technologies", icon: Lightbulb },
     { number: "100%", label: "Passion", icon: Rocket }
   ];
 
