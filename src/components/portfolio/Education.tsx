@@ -7,7 +7,7 @@ const education = [
     degree: "B.Tech Computer Science & Engineering",
     institution: "PSIT Kanpur",
     period: "2022 - Present",
-    gpa: "7.41 CGPA",
+    gpa: "7.52 CGPA",
     status: "In Progress",
     location: "Kanpur, India",
     description: "Pursuing Bachelor's in Computer Science with focus on Software Engineering, Data Structures & Algorithms, and Web Technologies.",
