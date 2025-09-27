@@ -458,7 +458,7 @@ export function Hero() {
               className="grid grid-cols-2 gap-4 w-full max-w-sm"
             >
               {[
-                { number: "50+", label: "Projects" },
+                { number: "5+", label: "Projects" },
                 { number: "3+", label: "Years Exp" },
                 { number: "15+", label: "Technologies" },
                 { number: "100%", label: "Dedication" }
