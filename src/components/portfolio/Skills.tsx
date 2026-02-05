@@ -6,7 +6,11 @@ import {
   SiPython, SiJavascript, SiCplusplus, SiMysql,
   SiExpress, SiNodedotjs, SiReact, SiDjango,
   SiGit, SiMongodb,
-  SiPandas, SiNumpy, SiScikitlearn, SiTensorflow
+  SiPandas, SiNumpy, SiScikitlearn, SiTensorflow,
+  SiTypescript,
+  SiPostman,
+  SiDocker,
+  SiLinux
 } from 'react-icons/si';
 import { FaJava, FaDatabase, FaGraduationCap, FaCommentDots } from 'react-icons/fa';
 import { VscCode } from 'react-icons/vsc';
@@ -18,7 +22,7 @@ const skillCategories = [
     skills: [
       { name: "Python", icon: SiPython, color: "#3776ab" },
       { name: "Java", icon: FaJava, color: "#f89820" },
-      { name: "C++", icon: SiCplusplus, color: "#00599c" },
+      { name: "TypeScript", icon: SiTypescript, color: "#00599c" },
       { name: "JavaScript", icon: SiJavascript, color: "#f7df1e" },
       { name: "SQL", icon: SiMysql, color: "#4479a1" }
     ],
@@ -31,7 +35,7 @@ const skillCategories = [
       { name: "Express", icon: SiExpress, color: "#000000" },
       { name: "Node.js", icon: SiNodedotjs, color: "#339933" },
       { name: "React", icon: SiReact, color: "#61dafb" },
-      { name: "Django", icon: SiDjango, color: "#092e20" }
+      // { name: "F", icon: SiDjango, color: "#092e20" }
     ],
     color: "secondary"
   },
@@ -40,9 +44,12 @@ const skillCategories = [
     icon: Wrench,
     skills: [
       { name: "VS Code", icon: VscCode, color: "#007acc" },
-      { name: "DialogFlow", icon: FaCommentDots, color: "#ff9800" },
+      { name: "Postman", icon: SiPostman, color: "#ff9800" },
+      { name: "Docker", icon: SiDocker, color: "#2496ed" },
       { name: "Git", icon: SiGit, color: "#f05032" },
-      { name: "MongoDB", icon: SiMongodb, color: "#47a248" }
+      { name: "MongoDB", icon: SiMongodb, color: "#47a248" },
+      { name: "Linux", icon: SiLinux, color: "#47a248" },
+
     ],
     color: "neon-cyan"
   },
@@ -50,10 +57,9 @@ const skillCategories = [
     title: "ML & Data",
     icon: Brain,
     skills: [
-      { name: "Pandas", icon: SiPandas, color: "#150458" },
-      { name: "NumPy", icon: SiNumpy, color: "#013243" },
+      { name: "NLP", icon: SiPandas, color: "#150458" },
+      { name: "Gen-Ai", icon: SiNumpy, color: "#013243" },
       { name: "SK-Learn", icon: SiScikitlearn, color: "#f7931e" },
-      { name: "TensorFlow", icon: SiTensorflow, color: "#ff6f00" }
     ],
     color: "highlight"
   },
@@ -64,7 +70,21 @@ const skillCategories = [
       { name: "OS", icon: FaGraduationCap, color: "#6366f1" },
       { name: "Data Structures", icon: FaDatabase, color: "#8b5cf6" },
       { name: "RDBMS", icon: FaDatabase, color: "#06b6d4" },
-      { name: "OOP", icon: Code, color: "#f59e0b" }
+      { name: "OOP", icon: Code, color: "#f59e0b" },
+      { name: "System-Design", icon: Wrench, color: "#f59e0b" }
+      
+    ],
+    color: "secondary"
+  },
+  {
+    title: "APIs & Concepts",
+    icon: BookOpen,
+    skills: [
+      { name: "REST", icon: FaCommentDots, color: "#ef4444" },
+      { name: "GraphQL", icon: FaCommentDots, color: "#e535ab" },
+      { name: "Microservices", icon: FaCommentDots, color: "#3b82f6" },
+      // { name: "Cloud", icon: FaCommentDots, color: "#6366f1" },
+      { name: "CI/CD", icon: FaCommentDots, color: "#10b981" }
     ],
     color: "secondary"
   }

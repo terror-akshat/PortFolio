@@ -7,7 +7,7 @@ const education = [
     degree: "B.Tech Computer Science & Engineering",
     institution: "PSIT Kanpur",
     period: "2022 - Present",
-    gpa: "7.52 CGPA",
+    gpa: "8.34 CGPA",
     status: "In Progress",
     location: "Kanpur, India",
     description: "Pursuing Bachelor's in Computer Science with focus on Software Engineering, Data Structures & Algorithms, and Web Technologies.",
@@ -16,8 +16,8 @@ const education = [
   {
     degree: "Intermediate (12th)",
     institution: "Senior Secondary School",
-    period: "2020 - 2021",
-    gpa: "75.65%",
+    period: "2021 - 2022",
+    gpa: "75.30%",
     status: "Completed",
     location: "India",
     description: "Completed higher secondary education with excellent performance in Mathematics and Science subjects.",
@@ -26,12 +26,12 @@ const education = [
   {
     degree: "High School (10th)",
     institution: "Secondary School",
-    period: "2019 - 2020",
-    gpa: "73.24%",
+    period: "2020 - 2021",
+    gpa: "73.8%",
     status: "Completed",
     location: "India",
     description: "Foundation education completed with strong academic performance across all subjects.",
-    highlights: ["Mathematics", "Science", "English", "Social Studies","Hindi"]
+    highlights: ["Mathematics", "Science", "English", "Social Studies","Physical Education"]
   }
 ];
 

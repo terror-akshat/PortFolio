@@ -1,61 +1,90 @@
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-import { Trophy, Star, Users, Target, Award, TrendingUp, Sparkles } from 'lucide-react';
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import {
+  Trophy,
+  Star,
+  Users,
+  Target,
+  Award,
+  TrendingUp,
+  Sparkles,
+} from "lucide-react";
 
 const achievements = [
   {
-    title: "AIR 1886 AINCAT",
-    description: "Top 0.41% nationwide ranking",
+    title: "Top 100 – Myntra HackerRamp 2025",
+    description: "National hackathon recognizing innovative digital solutions",
     icon: Trophy,
-    stats: "0.41%",
-    year: "2023",
+    stats: "Top 100",
+    year: "2025",
     color: "from-yellow-400 to-orange-500",
-    shadowColor: "shadow-yellow-500/25"
+    shadowColor: "shadow-yellow-500/25",
   },
   {
-    title: "5-Star HackerRank",
-    description: "Problem Solving Excellence",
-    icon: Star,
-    stats: "5★",
-    year: "2023",
+    title: "Amazon ML Challenge",
+    description: "Ranked in the Top 15% among 7100+ participants",
+    icon: Target,
+    stats: "Top 15%",
+    year: "2025",
     color: "from-blue-400 to-purple-500",
-    shadowColor: "shadow-blue-500/25"
+    shadowColor: "shadow-blue-500/25",
+  },
+  {
+    title: "Adobe India Hackathon",
+    description: "Secured a position in the Top 100 प्रतिभागियों में",
+    icon: Star,
+    stats: "Top 100",
+    year: "2025",
+    color: "from-pink-400 to-rose-500",
+    shadowColor: "shadow-pink-500/25",
+  },
+  {
+    title: "Ignitia Tech Event Lead – Bugiffy",
+    description: "Achieved the highest student participation among all events",
+    icon: Users,
+    stats: "Event Lead",
+    year: "2024",
+    color: "from-green-400 to-emerald-500",
+    shadowColor: "shadow-green-500/25",
   },
   {
     title: "LeetCode Problems",
-    description: "Algorithmic Problem Solving",
+    description: "Consistent algorithmic problem solving",
     icon: Target,
-    stats: "~700",
+    stats: "700+",
     year: "Ongoing",
-    color: "from-green-400 to-emerald-500",
-    shadowColor: "shadow-green-500/25"
+    color: "from-indigo-400 to-cyan-500",
+    shadowColor: "shadow-indigo-500/25",
   },
   {
-    title: "Live Performance",
-    description: "Technical presentation to large audience",
-    icon: Users,
-    stats: "2000+",
-    year: "2023",
-    color: "from-pink-400 to-rose-500",
-    shadowColor: "shadow-pink-500/25"
-  }
+    title: "4★ HackerRank (Java)",
+    description: "Demonstrated strong proficiency in Java programming",
+    icon: Star,
+    stats: "4★",
+    year: "2024",
+    color: "from-orange-400 to-amber-500",
+    shadowColor: "shadow-orange-500/25",
+  },
 ];
 
 export function Achievements() {
   const { ref, inView } = useInView({
     threshold: 0.1,
-    triggerOnce: true
+    triggerOnce: true,
   });
 
   return (
-    <section className="py-24 px-4 relative overflow-hidden bg-background dark:bg-background" ref={ref}>
+    <section
+      className="py-24 px-4 relative overflow-hidden bg-background dark:bg-background"
+      ref={ref}
+    >
       {/* Simple Background - Pattern A */}
       <div className="absolute inset-0 bg-gradient-to-br from-transparent via-blue-500/5 dark:via-blue-400/5 to-transparent"></div>
 
       {/* Floating decorative elements */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
-          animate={{ 
+          animate={{
             rotate: [0, 360],
             scale: [1, 1.2, 1],
           }}
@@ -63,7 +92,7 @@ export function Achievements() {
           className="absolute top-20 left-10 w-4 h-4 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full opacity-20"
         />
         <motion.div
-          animate={{ 
+          animate={{
             rotate: [360, 0],
             scale: [1, 1.5, 1],
           }}
@@ -71,7 +100,7 @@ export function Achievements() {
           className="absolute top-40 right-20 w-3 h-3 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full opacity-30"
         />
         <motion.div
-          animate={{ 
+          animate={{
             rotate: [0, 180, 360],
             y: [0, -20, 0],
           }}
@@ -113,30 +142,30 @@ export function Achievements() {
           {achievements.map((achievement, index) => {
             const IconComponent = achievement.icon;
             const isEven = index % 2 === 0;
-            
+
             return (
               <motion.div
                 key={achievement.title}
                 initial={{ opacity: 0, y: 80, rotateX: -15 }}
                 animate={inView ? { opacity: 1, y: 0, rotateX: 0 } : {}}
-                transition={{ 
-                  duration: 1, 
+                transition={{
+                  duration: 1,
                   delay: 0.5 + index * 0.2,
                   type: "spring",
-                  stiffness: 100
+                  stiffness: 100,
                 }}
                 className={`relative flex items-center justify-center ${
-                  isEven ? 'flex-row' : 'flex-row-reverse'
+                  isEven ? "flex-row" : "flex-row-reverse"
                 } gap-8 md:gap-16`}
               >
                 {/* Content Side */}
-                <motion.div 
-                  className={`flex-1 max-w-md ${isEven ? 'text-left' : 'text-right'}`}
+                <motion.div
+                  className={`flex-1 max-w-md ${isEven ? "text-left" : "text-right"}`}
                   whileHover={{ scale: 1.05, x: isEven ? 10 : -10 }}
                   transition={{ type: "spring", stiffness: 300 }}
                 >
                   {/* Title and Year */}
-                  <motion.div 
+                  <motion.div
                     className="mb-4"
                     initial={{ opacity: 0, x: isEven ? -30 : 30 }}
                     animate={inView ? { opacity: 1, x: 0 } : {}}
@@ -151,7 +180,7 @@ export function Achievements() {
                   </motion.div>
 
                   {/* Description */}
-                  <motion.p 
+                  <motion.p
                     className="text-lg text-gray-600 dark:text-gray-400 mb-6 leading-relaxed font-medium"
                     initial={{ opacity: 0, x: isEven ? -30 : 30 }}
                     animate={inView ? { opacity: 1, x: 0 } : {}}
@@ -166,47 +195,55 @@ export function Achievements() {
                     animate={inView ? { opacity: 1, scaleX: 1 } : {}}
                     transition={{ duration: 1.2, delay: 1 + index * 0.1 }}
                     className={`h-1 bg-gradient-to-r ${achievement.color} rounded-full ${achievement.shadowColor} shadow-lg`}
-                    style={{ transformOrigin: isEven ? 'left' : 'right' }}
+                    style={{ transformOrigin: isEven ? "left" : "right" }}
                   />
                 </motion.div>
 
                 {/* Central Icon and Stats */}
-                <motion.div 
+                <motion.div
                   className="flex flex-col items-center space-y-4"
                   initial={{ opacity: 0, scale: 0, rotate: -180 }}
                   animate={inView ? { opacity: 1, scale: 1, rotate: 0 } : {}}
-                  transition={{ 
-                    duration: 1, 
+                  transition={{
+                    duration: 1,
                     delay: 0.6 + index * 0.2,
                     type: "spring",
-                    stiffness: 200 
+                    stiffness: 200,
                   }}
-                  whileHover={{ 
-                    scale: 1.1, 
+                  whileHover={{
+                    scale: 1.1,
                     rotate: 5,
-                    transition: { type: "spring", stiffness: 400 }
+                    transition: { type: "spring", stiffness: 400 },
                   }}
                 >
                   {/* Icon with glow */}
-                  <div className={`relative w-20 h-20 md:w-24 md:h-24 bg-gradient-to-r ${achievement.color} rounded-full flex items-center justify-center ${achievement.shadowColor} shadow-2xl`}>
+                  <div
+                    className={`relative w-20 h-20 md:w-24 md:h-24 bg-gradient-to-r ${achievement.color} rounded-full flex items-center justify-center ${achievement.shadowColor} shadow-2xl`}
+                  >
                     <IconComponent className="w-10 h-10 md:w-12 md:h-12 text-white" />
-                    
+
                     {/* Pulsing ring */}
                     <motion.div
                       animate={{ scale: [1, 1.4, 1], opacity: [0.5, 0, 0.5] }}
-                      transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                      transition={{
+                        duration: 2,
+                        repeat: Infinity,
+                        ease: "easeInOut",
+                      }}
                       className={`absolute inset-0 rounded-full bg-gradient-to-r ${achievement.color} opacity-30`}
                     />
                   </div>
 
                   {/* Stats */}
-                  <motion.div 
+                  <motion.div
                     className="text-center"
                     initial={{ opacity: 0, y: 20 }}
                     animate={inView ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.6, delay: 0.8 + index * 0.2 }}
                   >
-                    <div className={`text-4xl md:text-5xl font-bold bg-gradient-to-r ${achievement.color} bg-clip-text text-transparent`}>
+                    <div
+                      className={`text-4xl md:text-5xl font-bold bg-gradient-to-r ${achievement.color} bg-clip-text text-transparent`}
+                    >
                       {achievement.stats}
                     </div>
                   </motion.div>
@@ -219,9 +256,9 @@ export function Achievements() {
                   transition={{ duration: 0.8, delay: 1.2 + index * 0.1 }}
                   className={`absolute top-1/2 transform -translate-y-1/2 h-0.5 bg-gradient-to-r ${achievement.color} hidden lg:block z-0`}
                   style={{
-                    left: isEven ? 'calc(40% + 2rem)' : '50%',
-                    right: isEven ? '50%' : 'calc(40% + 2rem)',
-                    transformOrigin: isEven ? 'left' : 'right'
+                    left: isEven ? "calc(40% + 2rem)" : "50%",
+                    right: isEven ? "50%" : "calc(40% + 2rem)",
+                    transformOrigin: isEven ? "left" : "right",
                   }}
                 />
 
@@ -239,7 +276,7 @@ export function Achievements() {
                         duration: 3 + i,
                         repeat: Infinity,
                         delay: i * 0.5 + index * 0.3,
-                        ease: "easeInOut"
+                        ease: "easeInOut",
                       }}
                       className={`absolute w-2 h-2 bg-gradient-to-r ${achievement.color} rounded-full`}
                       style={{
@@ -266,13 +303,15 @@ export function Achievements() {
               whileHover={{ scale: 1.05, y: -5 }}
               className="space-y-3"
             >
-              <motion.div
-                className="w-16 h-16 mx-auto bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full flex items-center justify-center shadow-lg shadow-yellow-500/25"
-              >
+              <motion.div className="w-16 h-16 mx-auto bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full flex items-center justify-center shadow-lg shadow-yellow-500/25">
                 <Trophy className="w-8 h-8 text-white" />
               </motion.div>
-              <div className="text-3xl font-bold text-gray-900 dark:text-white">4</div>
-              <div className="text-sm text-gray-600 dark:text-gray-400 font-medium">Major Awards</div>
+              <div className="text-3xl font-bold text-gray-900 dark:text-white">
+                4
+              </div>
+              <div className="text-sm text-gray-600 dark:text-gray-400 font-medium">
+                Major Awards
+              </div>
             </motion.div>
 
             <motion.div
@@ -281,13 +320,21 @@ export function Achievements() {
             >
               <motion.div
                 animate={{ scale: [1, 1.1, 1] }}
-                transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                transition={{
+                  duration: 2,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
                 className="w-16 h-16 mx-auto bg-gradient-to-r from-blue-400 to-purple-500 rounded-full flex items-center justify-center shadow-lg shadow-blue-500/25"
               >
                 <Star className="w-8 h-8 text-white" />
               </motion.div>
-              <div className="text-3xl font-bold text-gray-900 dark:text-white">5★</div>
-              <div className="text-sm text-gray-600 dark:text-gray-400 font-medium">Max Rating</div>
+              <div className="text-3xl font-bold text-gray-900 dark:text-white">
+                5★
+              </div>
+              <div className="text-sm text-gray-600 dark:text-gray-400 font-medium">
+                Max Rating
+              </div>
             </motion.div>
 
             <motion.div
@@ -296,13 +343,21 @@ export function Achievements() {
             >
               <motion.div
                 animate={{ rotate: [0, -10, 10, 0] }}
-                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                transition={{
+                  duration: 4,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
                 className="w-16 h-16 mx-auto bg-gradient-to-r from-green-400 to-emerald-500 rounded-full flex items-center justify-center shadow-lg shadow-green-500/25"
               >
                 <Target className="w-8 h-8 text-white" />
               </motion.div>
-              <div className="text-3xl font-bold text-gray-900 dark:text-white">700+</div>
-              <div className="text-sm text-gray-600 dark:text-gray-400 font-medium">Problems Solved</div>
+              <div className="text-3xl font-bold text-gray-900 dark:text-white">
+                700+
+              </div>
+              <div className="text-sm text-gray-600 dark:text-gray-400 font-medium">
+                Problems Solved
+              </div>
             </motion.div>
 
             <motion.div
@@ -311,13 +366,21 @@ export function Achievements() {
             >
               <motion.div
                 animate={{ y: [0, -5, 0] }}
-                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                transition={{
+                  duration: 3,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
                 className="w-16 h-16 mx-auto bg-gradient-to-r from-pink-400 to-rose-500 rounded-full flex items-center justify-center shadow-lg shadow-pink-500/25"
               >
                 <TrendingUp className="w-8 h-8 text-white" />
               </motion.div>
-              <div className="text-3xl font-bold text-gray-900 dark:text-white">0.41%</div>
-              <div className="text-sm text-gray-600 dark:text-gray-400 font-medium">Top Percentile</div>
+              <div className="text-3xl font-bold text-gray-900 dark:text-white">
+                0.41%
+              </div>
+              <div className="text-sm text-gray-600 dark:text-gray-400 font-medium">
+                Top Percentile
+              </div>
             </motion.div>
           </div>
         </motion.div>

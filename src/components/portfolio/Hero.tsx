@@ -275,7 +275,7 @@ export function Hero() {
                 }}
                 style={{ backgroundSize: "200% 200%" }}
               >
-                HARIOM
+                AKSHAT
               </motion.span>
               <motion.span 
                 className="block text-white"
@@ -283,7 +283,7 @@ export function Hero() {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.8 }}
               >
-                ASTHANA
+                AGARWAL
               </motion.span>
             </motion.h1>
 
@@ -308,9 +308,9 @@ export function Hero() {
             {[
               { name: "React", color: "from-cyan-400 to-blue-500" },
               { name: "TypeScript", color: "from-blue-400 to-purple-500" },
-              { name: "Python", color: "from-green-400 to-emerald-500" },
-              { name: "Node.js", color: "from-green-400 to-lime-500" },
-              { name: "MongoDB", color: "from-emerald-400 to-teal-500" },
+              { name: "JavaScript", color: "from-green-400 to-emerald-500" },
+              { name: "Node.js", color: "from-green-400 to-lime-1000" },
+              { name: "Express.js", color: "from-emerald-400 to-teal-500" },
               { name: "AI/ML", color: "from-purple-400 to-pink-500" },
             ].map((tech, index) => (
               <motion.div
@@ -458,8 +458,8 @@ export function Hero() {
               className="grid grid-cols-2 gap-4 w-full max-w-sm"
             >
               {[
-                { number: "5+", label: "Projects" },
-                { number: "3+", label: "Years Exp" },
+                { number: "15+", label: "Projects" },
+                // { number: "", label: "Years Exp" },
                 { number: "15+", label: "Technologies" },
                 { number: "100%", label: "Dedication" }
               ].map((stat, i) => (

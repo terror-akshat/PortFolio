@@ -5,8 +5,8 @@ import { Mail, Phone, Github, Linkedin, Code, MapPin, Send, MessageCircle, Calen
 const contactInfo = [
   {
     label: "Email",
-    value: "hariomasthana.cseai.29@gmail.com",
-    href: "mailto:hariomasthana.cseai.29@gmail.com",
+    value: "akshat.agarwal9292@gmail.com",
+    href: "mailto:akshat.agarwal9292@gmail.com",
     icon: Mail,
     gradient: "from-red-400 to-pink-400",
     bgGradient: "from-red-500/10 to-pink-500/10",
@@ -15,8 +15,8 @@ const contactInfo = [
   },
   {
     label: "Phone",
-    value: "+91 7678804451",
-    href: "tel:+917678804451",
+    value: "+91 8081310879",
+    href: "tel:+918081310879",
     icon: Phone,
     gradient: "from-green-400 to-emerald-400",
     bgGradient: "from-green-500/10 to-emerald-500/10",
@@ -39,32 +39,32 @@ const socialLinks = [
   {
     name: "GitHub",
     icon: Github,
-    href: "https://github.com/hariom",
+    href: "https://github.com/terror-akshat",
     gradient: "from-purple-400 to-indigo-400",
     bgGradient: "from-purple-500/10 to-indigo-500/10",
     borderColor: "border-purple-400/30",
     description: "Code repositories and projects",
-    stats: "5+ Repositories"
+    stats: "50+ Repositories"
   },
   {
     name: "LinkedIn",
     icon: Linkedin,
-    href: "https://linkedin.com/in/hariom",
+    href: "https://www.linkedin.com/in/akshat-agarwal-55946a27a/",
     gradient: "from-blue-400 to-sky-400",
     bgGradient: "from-blue-500/10 to-sky-500/10",
     borderColor: "border-blue-400/30",
     description: "Professional network",
-    stats: "500+ Connections"
+    stats: "700+ Connections"
   },
   {
     name: "LeetCode",
     icon: Code,
-    href: "https://leetcode.com/hariom",
+    href: "https://leetcode.com/u/Akshat_CSAI/",
     gradient: "from-orange-400 to-yellow-400",
     bgGradient: "from-orange-500/10 to-yellow-500/10",
     borderColor: "border-orange-400/30",
     description: "Problem solving journey",
-    stats: "300+ Problems"
+    stats: "700+ Problems"
   }
 ];
 

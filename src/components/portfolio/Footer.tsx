@@ -1,58 +1,69 @@
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-import { Heart, ArrowUp, Mail, Phone, MapPin, Github, Linkedin, Code2, Calendar, Clock } from 'lucide-react';
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import {
+  Heart,
+  ArrowUp,
+  Mail,
+  Phone,
+  MapPin,
+  Github,
+  Linkedin,
+  Code2,
+  Calendar,
+  Clock,
+} from "lucide-react";
 
 const quickLinks = [
-  { name: 'Home', href: '#hero' },
-  { name: 'About', href: '#summary' },
-  { name: 'Projects', href: '#projects' },
-  { name: 'Skills', href: '#skills' },
-  { name: 'Achievements', href: '#achievements' },
-  { name: 'Education', href: '#education' },
-  { name: 'Certifications', href: '#certifications' },
-  { name: 'Contact', href: '#contact' },
+  { name: "Home", href: "#hero" },
+  { name: "About", href: "#summary" },
+  { name: "Projects", href: "#projects" },
+  { name: "Skills", href: "#skills" },
+  { name: "Achievements", href: "#achievements" },
+  { name: "Education", href: "#education" },
+  { name: "Certifications", href: "#certifications" },
+  { name: "Contact", href: "#contact" },
 ];
 
 const contactInfo = [
   {
     icon: Mail,
-    label: 'Email',
-    value: 'hariomasthana.cseai.29@gmail.com',
-    href: 'mailto:hariomasthana.cseai.29@gmail.com'
+    label: "Email",
+    value: "akshat.agarwal9292@gmail.com",
+    href: "mailto:akshat.agarwal9292@gmail.com",
   },
   {
     icon: Phone,
-    label: 'Phone',
-    value: '+91 7678804451',
-    href: 'tel:+917678804451'
+    label: "Phone",
+    value: "+91 8081310879",
+    href: "tel:+918081310879",
   },
   {
     icon: MapPin,
-    label: 'Location',
-    value: 'Kanpur, India',
-    href: '#'
-  }
+    label: "Location",
+    value: "Kanpur, India",
+    href: "#",
+  },
 ];
 
 const socialLinks = [
   {
-    name: 'GitHub',
+    name: "GitHub",
     icon: Github,
-    href: 'https://github.com/hariom',
-    color: 'hover:text-purple-400'
+    href: "https://github.com/terror-akshat",
+    color: "hover:text-purple-400",
   },
   {
-    name: 'LinkedIn',
+    name: "LinkedIn",
     icon: Linkedin,
-    href: 'https://linkedin.com/in/hariom',
-    color: 'hover:text-blue-400'
+    href: "https://www.linkedin.com/in/akshat-agarwal-55946a27a/",
+    color: "hover:text-blue-400",
   },
   {
-    name: 'LeetCode',
+    name: "LeetCode",
     icon: Code2,
-    href: 'https://leetcode.com/hariom',
-    color: 'hover:text-orange-400'
-  }
+    href: "https://leetcode.com/u/Akshat_CSAI/",
+    color: "hover:text-orange-400",
+  },
 ];
 
 // Floating particles for animated background
@@ -88,17 +99,20 @@ const FooterParticles = () => {
 export function Footer() {
   const { ref, inView } = useInView({
     threshold: 0.1,
-    triggerOnce: true
+    triggerOnce: true,
   });
 
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="relative bg-slate-950 border-t border-white/10" ref={ref}>
+    <footer
+      className="relative bg-slate-950 border-t border-white/10"
+      ref={ref}
+    >
       {/* Animated Background */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/50 to-transparent" />
@@ -109,7 +123,6 @@ export function Footer() {
         {/* Main Footer Content */}
         <div className="max-w-7xl mx-auto px-4 py-16">
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-12">
-            
             {/* Brand Section */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -124,11 +137,13 @@ export function Footer() {
                     whileHover={{ scale: 1.1, rotate: 5 }}
                     className="w-12 h-12 rounded-xl bg-gradient-to-r from-blue-400 to-purple-500 flex items-center justify-center shadow-lg shadow-blue-500/25"
                   >
-                    <span className="text-white font-orbitron font-bold text-xl">H</span>
+                    <span className="text-white font-orbitron font-bold text-xl">
+                      H
+                    </span>
                   </motion.div>
                   <div>
                     <h3 className="text-2xl font-orbitron font-bold text-white">
-                      HARIOM ASTHANA
+                      AKSHAT AGARWAL
                     </h3>
                     <p className="text-slate-400 font-rajdhani">
                       Full Stack Developer & Problem Solver
@@ -138,8 +153,9 @@ export function Footer() {
 
                 {/* Description */}
                 <p className="text-slate-300 font-rajdhani leading-relaxed max-w-md">
-                  Passionate about creating innovative digital solutions that make a difference. 
-                  Specializing in modern web technologies with a focus on user experience and performance.
+                  Passionate about creating innovative digital solutions that
+                  make a difference. Specializing in modern web technologies
+                  with a focus on user experience and performance.
                 </p>
 
                 {/* Status */}
@@ -193,7 +209,9 @@ export function Footer() {
                     className="block text-slate-400 hover:text-white transition-colors duration-300 font-rajdhani hover:text-blue-400"
                     onClick={(e) => {
                       e.preventDefault();
-                      document.querySelector(link.href)?.scrollIntoView({ behavior: 'smooth' });
+                      document
+                        .querySelector(link.href)
+                        ?.scrollIntoView({ behavior: "smooth" });
                     }}
                   >
                     {link.name}
@@ -229,9 +247,7 @@ export function Footer() {
                         <p className="text-xs font-rajdhani text-slate-500">
                           {contact.label}
                         </p>
-                        <p className="font-rajdhani text-sm">
-                          {contact.value}
-                        </p>
+                        <p className="font-rajdhani text-sm">{contact.value}</p>
                       </div>
                     </motion.a>
                   );
@@ -261,7 +277,6 @@ export function Footer() {
         >
           <div className="max-w-7xl mx-auto px-4 py-6">
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-              
               {/* Copyright */}
               <div className="flex items-center gap-2 text-slate-400 font-rajdhani">
                 <span>© {currentYear} Hariom Asthana.</span>
