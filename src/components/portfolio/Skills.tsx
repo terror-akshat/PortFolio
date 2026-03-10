@@ -22,7 +22,6 @@ const skillCategories = [
     skills: [
       { name: "Python", icon: SiPython, color: "#3776ab" },
       { name: "Java", icon: FaJava, color: "#f89820" },
-      { name: "TypeScript", icon: SiTypescript, color: "#00599c" },
       { name: "JavaScript", icon: SiJavascript, color: "#f7df1e" },
       { name: "SQL", icon: SiMysql, color: "#4479a1" }
     ],
@@ -45,7 +44,6 @@ const skillCategories = [
     skills: [
       { name: "VS Code", icon: VscCode, color: "#007acc" },
       { name: "Postman", icon: SiPostman, color: "#ff9800" },
-      { name: "Docker", icon: SiDocker, color: "#2496ed" },
       { name: "Git", icon: SiGit, color: "#f05032" },
       { name: "MongoDB", icon: SiMongodb, color: "#47a248" },
       { name: "Linux", icon: SiLinux, color: "#47a248" },
@@ -59,7 +57,6 @@ const skillCategories = [
     skills: [
       { name: "NLP", icon: SiPandas, color: "#150458" },
       { name: "Gen-Ai", icon: SiNumpy, color: "#013243" },
-      { name: "SK-Learn", icon: SiScikitlearn, color: "#f7931e" },
     ],
     color: "highlight"
   },
@@ -81,10 +78,7 @@ const skillCategories = [
     icon: BookOpen,
     skills: [
       { name: "REST", icon: FaCommentDots, color: "#ef4444" },
-      { name: "GraphQL", icon: FaCommentDots, color: "#e535ab" },
       { name: "Microservices", icon: FaCommentDots, color: "#3b82f6" },
-      // { name: "Cloud", icon: FaCommentDots, color: "#6366f1" },
-      { name: "CI/CD", icon: FaCommentDots, color: "#10b981" }
     ],
     color: "secondary"
   }

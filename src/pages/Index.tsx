@@ -6,6 +6,7 @@ import { Skills } from '@/components/portfolio/Skills';
 import { Achievements } from '@/components/portfolio/Achievements';
 import { Education } from '@/components/portfolio/Education';
 import { Certifications } from '@/components/portfolio/Certifications';
+import { Experience } from '@/components/portfolio/Experience';
 import { Contact } from '@/components/portfolio/Contact';
 import { Footer } from '@/components/portfolio/Footer';
 
@@ -37,6 +38,10 @@ const Index = () => {
         
         <section id="education">
           <Education />
+        </section>
+
+        <section id="experience">
+          <Experience />
         </section>
         
         <section id="certifications">

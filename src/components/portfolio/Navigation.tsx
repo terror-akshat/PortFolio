@@ -75,7 +75,7 @@ export function Navigation() {
                 <span className="text-white font-orbitron font-bold text-lg">AK</span>
               </div>
               <span className="text-2xl font-orbitron font-bold gradient-text">
-                AKSHAT
+                AMAN
               </span>
             </motion.div>
 

@@ -275,7 +275,7 @@ export function Hero() {
                 }}
                 style={{ backgroundSize: "200% 200%" }}
               >
-                AKSHAT
+                AMAN
               </motion.span>
               <motion.span 
                 className="block text-white"
@@ -283,7 +283,7 @@ export function Hero() {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.8 }}
               >
-                AGARWAL
+                GUPTA
               </motion.span>
             </motion.h1>
 

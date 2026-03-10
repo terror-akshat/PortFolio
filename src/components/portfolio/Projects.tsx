@@ -35,7 +35,7 @@ const projects = [
       "NLP",
       "Cosine Similarity",
     ],
-    link: "https://github.com/terror-akshat/TryBe",
+    link: "https://github.com/fusionAMAN/trybeFrontend",
     status: "Hackathon Project",
     category: "AI + Full-Stack",
     year: "2025",
@@ -86,7 +86,7 @@ const projects = [
     description:
       "A Flask-based AI application that summarizes long text and video content by extracting speech from videos and generating concise bullet-point summaries.",
     tech: ["Python", "Flask", "Hugging Face (T5-small)", "NLP", "NLTK"],
-    link: "https://github.com/terror-akshat/Brief-View",
+    link: "https://github.com/fusionAMAN/BriefView",
     status: "Completed",
     category: "AI / NLP",
     year: "2024",
@@ -103,7 +103,7 @@ const projects = [
     description:
       "A front-end focused travel web application that allows users to plan journeys, maintain travel journals, and manage trip-related information through an interactive and responsive UI.",
     tech: ["HTML", "CSS", "JavaScript"],
-    link: "https://github.com/terror-akshat/Journey-Junction",
+    link: "https://github.com/fusionAMAN/journey-junction",
     status: "Completed",
     category: "Frontend Web Application",
     year: "2023",
@@ -285,7 +285,7 @@ export function Projects() {
                     {/* Actions - Fixed at Bottom */}
                     <div className="flex gap-3 pt-4 mt-auto">
                       <a
-                        href="https://github.com/terror-akshat"
+                        href="https://github.com/fusionAman"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex-1"

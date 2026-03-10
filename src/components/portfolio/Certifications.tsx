@@ -15,16 +15,16 @@ import {
 
 const certifications = [
   {
-    title: "Software Testing",
-    issuer: "Simplilearn",
-    date: "Sep, 2025",
-    type: "Quality Assurance",
+    title: "Programming with python",
+    issuer: "Infosys Springboard",
+    date: "jan, 2024",
+    type: "Programming",
     level: "Professional",
     credentialUrl:
-      "https://drive.google.com/file/d/1rRuEWZyWK2CkcduZvBTNzezkevuxYrJH/view?usp=drive_link",
+      "https://drive.google.com/file/d/1p47hDDCy5AR32pVibiPVnTI7Y4PymCOb/view",
     description:
-      "Certification focused on software testing methodologies, bug tracking, test case design, and quality assurance practices for reliable application delivery.",
-    skills: ["Manual Testing", "Test Cases", "Bug Tracking", "QA Processes"],
+      "Certification covering Python programming fundamentals and applied skills, including scripting, data handling, OOP, and building efficient, maintainable code.",
+    skills: ["Python", "Scripting", "OOP", "Data Handling"],
     icon: Code,
     gradient: "from-blue-400 to-indigo-400",
     bgGradient: "from-blue-500/10 to-indigo-500/10",
@@ -38,7 +38,7 @@ const certifications = [
     type: "Project Management",
     level: "Intermediate",
     credentialUrl:
-      "https://drive.google.com/file/d/1YATYwqfmlqe5ViwD5kst5PKeChHCsVKE/view?usp=drive_link",
+      "https://drive.google.com/file/d/10XCT7_77q4PEjSO_GDHHUHQbXPfej7VZ/view",
     description:
       "Certification covering Agile principles, Scrum framework, sprint planning, and collaborative development for efficient software delivery.",
     skills: ["Agile", "Scrum", "Sprint Planning", "Team Collaboration"],
@@ -49,26 +49,26 @@ const certifications = [
     textColor: "text-orange-400",
   },
   {
-    title: "AI Fundamentals",
-    issuer: "IBM",
-    date: "May, 2025",
-    type: "Artificial Intelligence",
+    title: "Full Stack Development",
+    issuer: "Udemy",
+    date: "2026",
+    type: "Web Development",
     level: "Advanced",
     credentialUrl:
-      "https://drive.google.com/file/d/1rRuEWZyWK2CkcduZvBTNzezkevuxYrJH/view?usp=drive_link",
+      "https://www.udemy.com/certificate/UC-8954d46e-66a2-45e3-bd74-f36a1c7865b7/",
     description:
-      "Comprehensive certification introducing core AI concepts including machine learning, neural networks, and real-world AI applications.",
+      "Full stack development certificate covering frontend, backend, databases, REST APIs, deployment, and modern web frameworks.",
     skills: [
-      "Machine Learning",
-      "Neural Networks",
-      "AI Concepts",
-      "Data Modeling",
+      "HTML/CSS",
+      "JavaScript",
+      "Node.js",
+      "React",
     ],
-    icon: Brain,
-    gradient: "from-purple-400 to-pink-400",
-    bgGradient: "from-purple-500/10 to-pink-500/10",
-    borderColor: "border-purple-400/30",
-    textColor: "text-purple-400",
+    icon: Code,
+    gradient: "from-blue-400 to-indigo-400",
+    bgGradient: "from-blue-500/10 to-indigo-500/10",
+    borderColor: "border-blue-400/30",
+    textColor: "text-blue-400",
   },
   {
     title: "FoSS Hackathon Participation",

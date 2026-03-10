@@ -9,7 +9,7 @@ export function Summary() {
   });
 
   const stats = [
-    { number: "700+", label: "LeetCode Problems", icon: Brain },
+    { number: "800+", label: "LeetCode Problems", icon: Brain },
     { number: "15+", label: "Projects Built", icon: Code2 },
     { number: "25", label: "Technologies", icon: Lightbulb },
     { number: "100%", label: "Passion", icon: Rocket },
@@ -19,7 +19,7 @@ export function Summary() {
     {
       icon: Brain,
       title: "Problem Solver",
-      description: "700+ LeetCode problems solved with algorithmic thinking",
+      description: "800+ LeetCode problems solved with algorithmic thinking",
       color: "from-blue-500 to-cyan-500",
     },
     {
@@ -201,7 +201,7 @@ export function Summary() {
                     className="text-gray-700 dark:text-gray-300"
                   >
                     <span className="font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                      I am Akshat Agarwal, a Full-Stack Developer
+                      I am Aman Gupta, a Full-Stack Developer
                     </span>{" "}
                     Proficient in backend development with strong command over
                     JavaScript Java, specializing in building scalable and
@@ -240,17 +240,17 @@ export function Summary() {
                   {[
                     {
                       name: "LinkedIn",
-                      link: "https://www.linkedin.com/in/akshat-agarwal-55946a27a/",
+                      link: "https://www.linkedin.com/in/aman-gupta-9b9394260/",
                       gradient: "from-blue-600 to-blue-800",
                     },
                     {
                       name: "GitHub",
-                      link: "https://github.com/terror-akshat",
+                      link: "https://github.com/fusionAman",
                       gradient: "from-gray-800 to-black",
                     },
                     {
                       name: "LeetCode",
-                      link: "https://leetcode.com/u/Akshat_CSAI/",
+                      link: "https://leetcode.com/u/gupta_aman107/",
                       gradient: "from-yellow-500 to-orange-600",
                     },
                   ].map((item, index) => (

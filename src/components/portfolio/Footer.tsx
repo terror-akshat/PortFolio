@@ -28,14 +28,14 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "akshat.agarwal9292@gmail.com",
+    value: "40guptaaman@gmail.com",
     href: "mailto:akshat.agarwal9292@gmail.com",
   },
   {
     icon: Phone,
     label: "Phone",
-    value: "+91 8081310879",
-    href: "tel:+918081310879",
+    value: "+91 8887468010",
+    href: "tel:+918887468010",
   },
   {
     icon: MapPin,
@@ -49,19 +49,19 @@ const socialLinks = [
   {
     name: "GitHub",
     icon: Github,
-    href: "https://github.com/terror-akshat",
+    href: "https://github.com/fussionAman",
     color: "hover:text-purple-400",
   },
   {
     name: "LinkedIn",
     icon: Linkedin,
-    href: "https://www.linkedin.com/in/akshat-agarwal-55946a27a/",
+    href: "https://www.linkedin.com/in/aman-gupta-9b9394260/",
     color: "hover:text-blue-400",
   },
   {
     name: "LeetCode",
     icon: Code2,
-    href: "https://leetcode.com/u/Akshat_CSAI/",
+    href: "https://leetcode.com/u/gupta_aman107/",
     color: "hover:text-orange-400",
   },
 ];
@@ -143,7 +143,7 @@ export function Footer() {
                   </motion.div>
                   <div>
                     <h3 className="text-2xl font-orbitron font-bold text-white">
-                      AKSHAT AGARWAL
+                      AMAN GUPTA
                     </h3>
                     <p className="text-slate-400 font-rajdhani">
                       Full Stack Developer & Problem Solver
@@ -279,7 +279,7 @@ export function Footer() {
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
               {/* Copyright */}
               <div className="flex items-center gap-2 text-slate-400 font-rajdhani">
-                <span>© {currentYear} Hariom Asthana.</span>
+                <span>© {currentYear} Aman Gupta.</span>
                 <span>Crafted with</span>
                 <Heart className="w-4 h-4 text-red-400 animate-pulse" />
                 <span>using React & TypeScript</span>
@@ -289,11 +289,7 @@ export function Footer() {
               <div className="flex items-center gap-4 text-xs font-rajdhani text-slate-500">
                 <div className="flex items-center gap-1">
                   <Clock className="w-3 h-3" />
-                  <span>Last updated: December 2024</span>
-                </div>
-                <div className="flex items-center gap-1">
-                  <Calendar className="w-3 h-3" />
-                  <span>Version 2.0</span>
+                  <span>Last updated: March 2026</span>
                 </div>
               </div>
             </div>

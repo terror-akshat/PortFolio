@@ -4,24 +4,24 @@ import { GraduationCap, Calendar, MapPin, Award, BookOpen, Star } from 'lucide-r
 
 const education = [
   {
-    degree: "B.Tech Computer Science & Engineering",
-    institution: "PSIT Kanpur",
+    degree: "B.Tech in Computer Science and Engineering (AI)",
+    institution: "Pranveer Singh Institute of Technology, Kanpur",
     period: "2022 - Present",
-    gpa: "8.34 CGPA",
+    gpa: "8.7 CGPA / 10",
     status: "In Progress",
     location: "Kanpur, India",
-    description: "Pursuing Bachelor's in Computer Science with focus on Software Engineering, Data Structures & Algorithms, and Web Technologies.",
-    highlights: ["Software Engineering", "Data Structures", "Web Technologies", "Database Management"]
+    description: "Pursuing B.Tech CSE (AI) focusing on algorithms, machine learning, data structures, and intelligent systems.",
+    highlights: ["Artificial Intelligence", "Data Structures", "Machine Learning", "Algorithms"]
   },
   {
     degree: "Intermediate (12th)",
-    institution: "Senior Secondary School",
-    period: "2021 - 2022",
-    gpa: "75.30%",
+    institution: "Kendriya Vidyalaya, Armapur, Kanpur",
+    period: "2021",
+    gpa: "96.80% - 2nd Position in School",
     status: "Completed",
-    location: "India",
-    description: "Completed higher secondary education with excellent performance in Mathematics and Science subjects.",
-    highlights: ["Mathematics", "Physics", "Chemistry", "Computer Science"]
+    location: "Kanpur, India",
+    description: "Achieved top academic rank in senior secondary education with high proficiency in science and mathematics.",
+    highlights: ["Physics", "Chemistry", "Mathematics", "Computer Science"]
   },
   {
     degree: "High School (10th)",
