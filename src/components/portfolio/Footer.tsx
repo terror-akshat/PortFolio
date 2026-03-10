@@ -279,7 +279,7 @@ export function Footer() {
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
               {/* Copyright */}
               <div className="flex items-center gap-2 text-slate-400 font-rajdhani">
-                <span>© {currentYear} Hariom Asthana.</span>
+                <span>© {currentYear} Akshat Agarwal.</span>
                 <span>Crafted with</span>
                 <Heart className="w-4 h-4 text-red-400 animate-pulse" />
                 <span>using React & TypeScript</span>
@@ -289,11 +289,7 @@ export function Footer() {
               <div className="flex items-center gap-4 text-xs font-rajdhani text-slate-500">
                 <div className="flex items-center gap-1">
                   <Clock className="w-3 h-3" />
-                  <span>Last updated: December 2024</span>
-                </div>
-                <div className="flex items-center gap-1">
-                  <Calendar className="w-3 h-3" />
-                  <span>Version 2.0</span>
+                  <span>Last updated: Febuary 2026</span>
                 </div>
               </div>
             </div>
