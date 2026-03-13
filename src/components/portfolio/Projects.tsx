@@ -35,7 +35,7 @@ const projects = [
       "NLP",
       "Cosine Similarity",
     ],
-    link: "https://github.com/fusionAMAN/trybeFrontend",
+    link: "https://github.com/terror-akshat/TryBe",
     status: "Hackathon Project",
     category: "AI + Full-Stack",
     year: "2025",

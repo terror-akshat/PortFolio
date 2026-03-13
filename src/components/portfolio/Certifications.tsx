@@ -2,8 +2,6 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import {
   ExternalLink,
-  Award,
-  Calendar,
   Shield,
   Star,
   CheckCircle,

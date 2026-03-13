@@ -1,19 +1,31 @@
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-import { Code, Database, Wrench, Brain, BookOpen } from 'lucide-react';
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { Code, Database, Wrench, Brain, BookOpen } from "lucide-react";
 // Technology Icons
-import { 
-  SiPython, SiJavascript, SiCplusplus, SiMysql,
-  SiExpress, SiNodedotjs, SiReact, SiDjango,
-  SiGit, SiMongodb,
-  SiPandas, SiNumpy, SiScikitlearn, SiTensorflow,
+import {
+  SiPython,
+  SiJavascript,
+  SiCplusplus,
+  SiMysql,
+  SiExpress,
+  SiNodedotjs,
+  SiReact,
+  SiDjango,
+  SiGit,
+  SiMongodb,
+  SiPandas,
+  SiNumpy,
+  SiScikitlearn,
+  SiTensorflow,
   SiTypescript,
   SiPostman,
   SiDocker,
-  SiLinux
-} from 'react-icons/si';
-import { FaJava, FaDatabase, FaGraduationCap, FaCommentDots } from 'react-icons/fa';
-import { VscCode } from 'react-icons/vsc';
+  SiLinux,
+  SiKubernetes,
+  SiDatabricks,
+} from "react-icons/si";
+import { FaJava, FaDatabase, FaGraduationCap } from "react-icons/fa";
+import { VscCode } from "react-icons/vsc";
 
 const skillCategories = [
   {
@@ -23,9 +35,9 @@ const skillCategories = [
       { name: "Python", icon: SiPython, color: "#3776ab" },
       { name: "Java", icon: FaJava, color: "#f89820" },
       { name: "JavaScript", icon: SiJavascript, color: "#f7df1e" },
-      { name: "SQL", icon: SiMysql, color: "#4479a1" }
+      { name: "SQL", icon: SiMysql, color: "#4479a1" },
     ],
-    color: "primary"
+    color: "primary",
   },
   {
     title: "Frameworks",
@@ -36,7 +48,7 @@ const skillCategories = [
       { name: "React", icon: SiReact, color: "#61dafb" },
       // { name: "F", icon: SiDjango, color: "#092e20" }
     ],
-    color: "secondary"
+    color: "secondary",
   },
   {
     title: "Tools",
@@ -47,9 +59,8 @@ const skillCategories = [
       { name: "Git", icon: SiGit, color: "#f05032" },
       { name: "MongoDB", icon: SiMongodb, color: "#47a248" },
       { name: "Linux", icon: SiLinux, color: "#47a248" },
-
     ],
-    color: "neon-cyan"
+    color: "neon-cyan",
   },
   {
     title: "ML & Data",
@@ -58,7 +69,7 @@ const skillCategories = [
       { name: "NLP", icon: SiPandas, color: "#150458" },
       { name: "Gen-Ai", icon: SiNumpy, color: "#013243" },
     ],
-    color: "highlight"
+    color: "highlight",
   },
   {
     title: "Coursework",
@@ -68,20 +79,29 @@ const skillCategories = [
       { name: "Data Structures", icon: FaDatabase, color: "#8b5cf6" },
       { name: "RDBMS", icon: FaDatabase, color: "#06b6d4" },
       { name: "OOP", icon: Code, color: "#f59e0b" },
-      { name: "System-Design", icon: Wrench, color: "#f59e0b" }
-      
+      { name: "System-Design", icon: Wrench, color: "#f59e0b" },
     ],
-    color: "secondary"
+    color: "secondary",
   },
   {
     title: "APIs & Concepts",
     icon: BookOpen,
     skills: [
-      { name: "REST", icon: FaCommentDots, color: "#ef4444" },
-      { name: "Microservices", icon: FaCommentDots, color: "#3b82f6" },
+      { name: "REST", icon: SiPostman, color: "#ef4444" },
+      { name: "Microservices", icon: SiKubernetes, color: "#3b82f6" },
+      { name: "Docker", icon: SiDocker, color: "#3b82f9" },
     ],
-    color: "secondary"
-  }
+    color: "secondary",
+  },
+  {
+    title: "Cloud Services",
+    icon: BookOpen,
+    skills: [
+      { name: "Azure", icon: SiDatabricks, color: "#0078D4" },
+      { name: "Databricks", icon: SiDatabricks, color: "#FF3700" },
+    ],
+    color: "secondary",
+  },
 ];
 
 interface SkillItem {
@@ -90,27 +110,32 @@ interface SkillItem {
   color: string;
 }
 
-const SkillCube = ({ skill, index, categoryColor }: { skill: SkillItem; index: number; categoryColor: string }) => {
+const SkillCube = ({
+  skill,
+  index,
+  categoryColor,
+}: {
+  skill: SkillItem;
+  index: number;
+  categoryColor: string;
+}) => {
   const IconComponent = skill.icon;
-  
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 30, scale: 0.8 }}
       animate={{ opacity: 1, y: 0, scale: 1 }}
-      transition={{ 
-        duration: 0.6, 
+      transition={{
+        duration: 0.6,
         delay: index * 0.1,
         type: "spring",
-        stiffness: 100
+        stiffness: 100,
       }}
       className="group"
     >
       <div className="skills-item-card h-28 w-full flex flex-col items-center justify-center p-4 text-center group-hover:scale-105 transition-all duration-300 bg-white/5 dark:bg-gray-800/20 backdrop-blur-sm border border-white/10 dark:border-gray-700/30 rounded-xl hover:border-white/30 dark:hover:border-gray-600/50 hover:bg-white/10 dark:hover:bg-gray-800/30">
         <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-white/20 to-white/5 dark:from-gray-700/50 dark:to-gray-800/30 flex items-center justify-center mb-2 group-hover:scale-110 transition-transform duration-300 shadow-lg backdrop-blur-sm">
-          <IconComponent 
-            className="w-7 h-7" 
-            style={{ color: skill.color }}
-          />
+          <IconComponent className="w-7 h-7" style={{ color: skill.color }} />
         </div>
         <p className="font-medium text-xs text-gray-700 dark:text-gray-300 leading-tight">
           {skill.name}
@@ -123,15 +148,18 @@ const SkillCube = ({ skill, index, categoryColor }: { skill: SkillItem; index: n
 export function Skills() {
   const { ref, inView } = useInView({
     threshold: 0.1,
-    triggerOnce: true
+    triggerOnce: true,
   });
 
   return (
-    <section className="py-24 px-4 bg-gradient-to-b from-blue-50/30 via-white to-purple-50/30 dark:from-gray-900/50 dark:via-gray-900 dark:to-gray-800/50 relative overflow-hidden" ref={ref}>
+    <section
+      className="py-24 px-4 bg-gradient-to-b from-blue-50/30 via-white to-purple-50/30 dark:from-gray-900/50 dark:via-gray-900 dark:to-gray-800/50 relative overflow-hidden"
+      ref={ref}
+    >
       {/* Background decoration */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(59,130,246,0.05),transparent_60%)] dark:bg-[radial-gradient(circle_at_30%_20%,rgba(59,130,246,0.1),transparent_60%)]"></div>
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(147,51,234,0.05),transparent_60%)] dark:bg-[radial-gradient(circle_at_70%_80%,rgba(147,51,234,0.1),transparent_60%)]"></div>
-      
+
       <div className="max-w-7xl mx-auto relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -162,17 +190,16 @@ export function Skills() {
                 key={category.title}
                 initial={{ opacity: 0, y: 80 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
-                transition={{ 
-                  duration: 0.8, 
+                transition={{
+                  duration: 0.8,
                   delay: categoryIndex * 0.15,
                   type: "spring",
-                  stiffness: 80
+                  stiffness: 80,
                 }}
                 className="group"
               >
                 {/* Category Container with uniform height */}
                 <div className="skills-category-card h-full rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-500">
-                  
                   {/* Category Header */}
                   <div className="text-center mb-6">
                     <div className="w-20 h-20 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-blue-500/20 to-purple-600/20 dark:from-blue-400/30 dark:to-purple-500/30 backdrop-blur-sm border border-blue-300/30 dark:border-blue-400/20 flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
@@ -187,16 +214,21 @@ export function Skills() {
                   {/* Skills Grid with uniform card sizes */}
                   <div className="grid grid-cols-2 gap-3 min-h-[240px]">
                     {category.skills.map((skill, skillIndex) => (
-                      <SkillCube 
-                        key={skill.name} 
-                        skill={skill} 
-                        index={skillIndex} 
+                      <SkillCube
+                        key={skill.name}
+                        skill={skill}
+                        index={skillIndex}
                         categoryColor={category.color}
                       />
                     ))}
                     {/* Fill empty slots to maintain grid alignment */}
-                    {Array.from({ length: Math.max(0, 4 - category.skills.length) }).map((_, emptyIndex) => (
-                      <div key={`${category.title}-empty-${emptyIndex}`} className="h-28 opacity-0"></div>
+                    {Array.from({
+                      length: Math.max(0, 4 - category.skills.length),
+                    }).map((_, emptyIndex) => (
+                      <div
+                        key={`${category.title}-empty-${emptyIndex}`}
+                        className="h-28 opacity-0"
+                      ></div>
                     ))}
                   </div>
                 </div>

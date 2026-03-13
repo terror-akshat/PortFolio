@@ -7,14 +7,14 @@ export function Summary() {
     threshold: 0.1,
     triggerOnce: true,
   });
-
+  
   const stats = [
     { number: "800+", label: "LeetCode Problems", icon: Brain },
     { number: "15+", label: "Projects Built", icon: Code2 },
     { number: "25", label: "Technologies", icon: Lightbulb },
     { number: "100%", label: "Passion", icon: Rocket },
   ];
-
+  
   const highlights = [
     {
       icon: Brain,

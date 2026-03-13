@@ -6,8 +6,8 @@ const education = [
   {
     degree: "B.Tech in Computer Science and Engineering (AI)",
     institution: "Pranveer Singh Institute of Technology, Kanpur",
-    period: "2022 - Present",
-    gpa: "8.7 CGPA / 10",
+    period: "2022 - 2026",
+    gpa: "8.8 CGPA / 10",
     status: "In Progress",
     location: "Kanpur, India",
     description: "Pursuing B.Tech CSE (AI) focusing on algorithms, machine learning, data structures, and intelligent systems.",
@@ -16,7 +16,7 @@ const education = [
   {
     degree: "Intermediate (12th)",
     institution: "Kendriya Vidyalaya, Armapur, Kanpur",
-    period: "2021",
+    period: "2020-2021",
     gpa: "96.80% - 2nd Position in School",
     status: "Completed",
     location: "Kanpur, India",
@@ -26,8 +26,8 @@ const education = [
   {
     degree: "High School (10th)",
     institution: "Secondary School",
-    period: "2020 - 2021",
-    gpa: "73.8%",
+    period: "2018 - 2019",
+    gpa: "95.6%",
     status: "Completed",
     location: "India",
     description: "Foundation education completed with strong academic performance across all subjects.",

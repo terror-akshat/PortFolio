@@ -31,7 +31,7 @@ const achievements = [
   },
   {
     title: "Adobe India Hackathon",
-    description: "Secured a position in the Top 100 प्रतिभागियों में",
+    description: "Secured a position in the Top 100  participants",
     icon: Star,
     stats: "Top 100",
     year: "2025",
@@ -40,7 +40,7 @@ const achievements = [
   },
   {
     title: "Won 1st prize in IOT Event",
-    description: "Secured a position in the Top 100 प्रतिभागियों में",
+    description: "Secured a position in the Top 100 participants",
     icon: Star,
     stats: "1",
     year: "2023",
