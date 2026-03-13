@@ -138,7 +138,7 @@ export function Footer() {
                     className="w-12 h-12 rounded-xl bg-gradient-to-r from-blue-400 to-purple-500 flex items-center justify-center shadow-lg shadow-blue-500/25"
                   >
                     <span className="text-white font-orbitron font-bold text-xl">
-                      H
+                      AG
                     </span>
                   </motion.div>
                   <div>

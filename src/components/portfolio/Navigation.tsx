@@ -72,7 +72,7 @@ export function Navigation() {
               className="flex items-center gap-3"
             >
               <div className="w-10 h-10 rounded-xl bg-gradient-primary flex items-center justify-center shadow-glow">
-                <span className="text-white font-orbitron font-bold text-lg">AK</span>
+                <span className="text-white font-orbitron font-bold text-lg">AG</span>
               </div>
               <span className="text-2xl font-orbitron font-bold gradient-text">
                 AMAN
