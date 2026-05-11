@@ -371,7 +371,7 @@ export function Hero() {
               </Button>
             </motion.div>
 
-            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            {/* <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Button 
                 variant="outline"
                 size="lg"
@@ -389,7 +389,7 @@ export function Hero() {
                   </motion.div>
                 </div>
               </Button>
-            </motion.div>
+            </motion.div> */}
           </motion.div>
           </motion.div>
 

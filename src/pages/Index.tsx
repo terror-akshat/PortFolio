@@ -8,6 +8,7 @@ import { Education } from '@/components/portfolio/Education';
 import { Certifications } from '@/components/portfolio/Certifications';
 import { Contact } from '@/components/portfolio/Contact';
 import { Footer } from '@/components/portfolio/Footer';
+import { ExperienceSection } from '@/components/portfolio/ExperienceSection';
 
 const Index = () => {
   return (
@@ -33,6 +34,10 @@ const Index = () => {
         
         <section id="achievements">
           <Achievements />
+        </section>
+
+        <section id="experience">
+          <ExperienceSection />
         </section>
         
         <section id="education">

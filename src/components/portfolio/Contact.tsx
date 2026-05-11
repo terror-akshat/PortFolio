@@ -44,7 +44,7 @@ const socialLinks = [
     bgGradient: "from-purple-500/10 to-indigo-500/10",
     borderColor: "border-purple-400/30",
     description: "Code repositories and projects",
-    stats: "50+ Repositories"
+    stats: "70+ Repositories"
   },
   {
     name: "LinkedIn",
