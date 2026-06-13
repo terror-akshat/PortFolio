@@ -4,9 +4,26 @@ import { Briefcase, Calendar, MapPin, Award, Laptop, Star } from "lucide-react";
 
 const experience = [
   {
+    role: "Software Engineer",
+    company: "Ethara.ai",
+    period: "May, 2026 - Present",
+    type: "Full Time",
+    location: "On-site",
+    description:
+      "Working as a LLM Engineer where we use rain enforcement techinque to train the ML model and set the benchmark.",
+    highlights: [
+      "Python",
+      "Git/GitHub",
+      "Docker",
+      "LLM",
+      "AI-Toos",
+      "Prompt Engineering",
+    ],
+  },
+  {
     role: "Full Stack Developer (Remote)",
     company: "Talent Squad Manpower Poland",
-    period: "2025 - Present",
+    period: "April, 2026 - June, 2026",
     type: "Remote Internship",
     location: "Remote",
     description:
@@ -259,4 +276,4 @@ export function ExperienceSection() {
   );
 }
 
-export default ExperienceSection
+export default ExperienceSection;
